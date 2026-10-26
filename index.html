@@ -1,28 +1,58 @@
 <!doctype html>
 <html lang="id">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ZTech Store</title>
-<meta name="description" content="Etalase aplikasi buatan ZTech.dev. Unduh APK langsung.">
-<meta name="theme-color" content="#053830">
-<link rel="icon" href="assets/store/logo.webp">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102d27">
+  <meta name="description" content="ZTech Store — etalase aplikasi Android, web, dan karya digital buatan ZTech.">
+  <meta property="og:title" content="ZTech Store — Karya Digital">
+  <meta property="og:description" content="Temukan aplikasi, web tools, dan karya digital dari ZTech dalam satu tempat.">
+  <title>ZTech Store — Karya Digital</title>
+  <link rel="icon" href="assets/store/logo.webp">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top">
-  <a class="brand" href="#/" aria-label="Beranda ZTech Store"><img src="assets/store/logo.webp" alt="" width="36" height="36"><span>ZTech <b>Store</b></span></a>
-  <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" placeholder="Cari aplikasi" autocomplete="off"></label>
-</header>
-<main id="view"></main>
-<footer class="foot">
-  <div><b>ZTech Store</b> adalah etalase aplikasi buatan ZTech.dev. Semua aplikasi diunduh langsung dari GitHub dan ditandatangani oleh developer.</div>
-  <nav><a href="privacy.html">Kebijakan Privasi</a><a id="ig" target="_blank" rel="noopener">Instagram</a><a id="mail">Kontak</a></nav>
-  <small>© 2026 ZTech.dev</small>
-</footer>
-<dialog id="sheet"></dialog>
-<div id="toast" role="status"></div>
-<script src="apps.js"></script>
-<script src="app.js"></script>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#/" aria-label="Beranda ZTech Store">
+        <img src="assets/store/logo.webp" alt="" width="40" height="40">
+        <span class="brand-name">ZTech <b>Store</b><small>KARYA DIGITAL</small></span>
+      </a>
+      <label class="search" aria-label="Cari produk">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+        <input id="q" type="search" placeholder="Cari aplikasi atau web..." autocomplete="off">
+        <kbd>/</kbd>
+      </label>
+      <button class="menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu <span aria-hidden="true">⌄</span></button>
+      <nav class="nav-links" id="nav-links" aria-label="Navigasi utama">
+        <a href="#/catalog">Katalog</a>
+        <a href="#/about">Tentang</a>
+        <a class="nav-social" href="https://www.instagram.com/iniii_nizar/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="view" tabindex="-1"></main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#/" aria-label="ZTech Store">
+          <img src="assets/store/logo.webp" alt="" width="34" height="34">
+          <span class="brand-name">ZTech <b>Store</b></span>
+        </a>
+        <p>Satu tempat untuk menemukan karya digital dari ZTech.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#/catalog">Jelajahi katalog</a>
+        <a href="privacy.html">Privasi situs</a>
+        <a href="https://www.instagram.com/iniii_nizar/" target="_blank" rel="noopener noreferrer">@iniii_nizar ↗</a>
+        <a id="mail" href="mailto:nizar.adn1711@gmail.com">Hubungi developer</a>
+      </div>
+      <small>© 2026 ZTech · Dibuat untuk karya yang terus berkembang.</small>
+    </div>
+  </footer>
+  <dialog id="sheet" aria-labelledby="sheet-title"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="apps.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
