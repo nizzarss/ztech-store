@@ -2,9 +2,9 @@
 <html lang="id">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080d18">
-  <meta name="description" content="ZTech Store — etalase aplikasi Android, website, dan karya digital.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e8e9ed">
+  <meta name="description" content="ZTech Store — katalog aplikasi Android, website, dan web tools.">
   <meta property="og:title" content="ZTech Store">
   <meta property="og:description" content="Jelajahi aplikasi dan karya digital dari ZTech.">
   <title>ZTech Store</title>
@@ -12,42 +12,39 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="#/" aria-label="ZTech Store">
-        <img src="assets/store/logo.webp" alt="" width="36" height="36">
-        <span>ZTech <b>Store</b></span>
-      </a>
-      <nav class="nav-links" aria-label="Navigasi utama">
-        <a href="#/catalog">Katalog</a>
-        <a href="https://www.instagram.com/iniii_nizar/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-      </nav>
-      <label class="search" aria-label="Cari karya">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
-        <input id="q" type="search" placeholder="Cari aplikasi atau website" autocomplete="off">
-      </label>
-    </div>
-  </header>
+  <div class="store-app">
+    <main id="view" tabindex="-1"></main>
 
-  <main id="view"></main>
+    <footer class="site-utility" aria-label="Tautan informasi">
+      <a href="privacy.html">Privasi situs</a>
+      <a href="https://www.instagram.com/iniii_nizar/" target="_blank" rel="noopener noreferrer">@iniii_nizar</a>
+      <a href="mailto:nizar.adn1711@gmail.com">Kontak</a>
+    </footer>
+  </div>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <a class="brand footer-brand" href="#/" aria-label="ZTech Store">
-        <img src="assets/store/logo.webp" alt="" width="28" height="28">
-        <span>ZTech <b>Store</b></span>
-      </a>
-      <span class="footer-description">Etalase aplikasi dan karya digital dari ZTech.</span>
-      <nav aria-label="Tautan footer">
-        <a href="privacy.html">Privasi situs</a>
-        <a href="https://www.instagram.com/iniii_nizar/" target="_blank" rel="noopener noreferrer">@iniii_nizar</a>
-        <a href="mailto:nizar.adn1711@gmail.com">Kontak</a>
-      </nav>
-    </div>
-  </footer>
+  <nav class="bottom-nav" aria-label="Navigasi utama">
+    <button type="button" data-nav="home" aria-label="Beranda">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"></rect><path d="M8 9h8M8 13h5"></path></svg>
+      <span>Beranda</span>
+    </button>
+    <button type="button" data-nav="catalog" aria-label="Kategori">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1.5"></rect><rect x="14" y="4" width="6" height="6" rx="1.5"></rect><rect x="4" y="14" width="6" height="6" rx="1.5"></rect><rect x="14" y="14" width="6" height="6" rx="1.5"></rect></svg>
+      <span>Kategori</span>
+    </button>
+    <button type="button" data-nav="share" aria-label="Bagikan ZTech Store">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"></circle><circle cx="6" cy="12" r="2.5"></circle><circle cx="18" cy="19" r="2.5"></circle><path d="m8.3 10.8 7.4-4.5M8.3 13.2l7.4 4.5"></path></svg>
+      <span>Bagikan</span>
+    </button>
+    <button type="button" data-nav="search" aria-label="Cari karya">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4 4"></path></svg>
+      <span>Cari</span>
+    </button>
+  </nav>
+  <div class="home-indicator" aria-hidden="true"></div>
 
   <dialog id="sheet" aria-labelledby="sheet-title"></dialog>
   <div id="toast" role="status" aria-live="polite"></div>
+
   <script src="apps.js"></script>
   <script src="app.js"></script>
 </body>
