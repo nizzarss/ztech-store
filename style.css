@@ -11,8 +11,8 @@
   --blue-mid: #315eae;
   --blue-lite: #8ba9df;
   --charcoal: #38383d;
-  --shadow-out: 9px 9px 22px rgba(104, 106, 117, .22), -8px -8px 22px rgba(255, 255, 255, .88);
-  --shadow-small: 5px 5px 12px rgba(110, 112, 122, .20), -5px -5px 12px rgba(255, 255, 255, .86);
+  --shadow-out: 12px 15px 30px rgba(0, 0, 0, .34), 4px 6px 14px rgba(0, 0, 0, .16);
+  --shadow-small: 6px 8px 17px rgba(0, 0, 0, .28), 2px 3px 7px rgba(0, 0, 0, .13);
   --shadow-in: inset 2px 2px 5px rgba(115, 117, 128, .13), inset -2px -2px 5px rgba(255, 255, 255, .84);
 }
 * { box-sizing: border-box; }
@@ -34,7 +34,7 @@ body::before {
   background-color: #07111f;
   background-image:
     linear-gradient(rgba(4, 11, 24, .055), rgba(4, 11, 24, .055)),
-    url("assets/store/background.svg");
+    url("assets/store/background.jpg");
   background-size: cover;
   background-position: center 48%;
   background-repeat: no-repeat;
@@ -57,7 +57,7 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width:
 .store-app { width: min(920px, 100%); margin: 0 auto; padding: 20px 22px 104px; }
 .raised-panel {
   background: linear-gradient(145deg, #f3f4f6 0%, #e9eaee 100%);
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255,255,255,.56);
   box-shadow: var(--shadow-out);
 }
 .home-top { padding: 24px 22px 18px; border-radius: 30px; }
@@ -471,4 +471,32 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width:
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
+
+/* Brighter labels on the page canvas; text inside the light product panels stays unchanged. */
+.catalog-title-row h1,
+.section-title-row h2 {
+  color: #f2f7ff;
+}
+.section-title-row p {
+  color: #b8c9df;
+}
+.text-link,
+.more-products-link {
+  color: #a9c9ff;
+}
+.popular-name {
+  color: #f1f6ff;
+}
+.popular-type {
+  color: #b7c8df;
+}
+.site-utility {
+  border-top-color: rgba(188, 211, 241, .23);
+}
+.site-utility a {
+  color: #c0d0e5;
+}
+.site-utility a:hover {
+  color: #ffffff;
 }
