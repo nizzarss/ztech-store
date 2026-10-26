@@ -34,7 +34,7 @@ body::before {
   background-color: #07111f;
   background-image:
     linear-gradient(rgba(4, 11, 24, .055), rgba(4, 11, 24, .055)),
-    url("assets/store/background.jpg");
+    url("assets/store/background.webp");
   background-size: cover;
   background-position: center 48%;
   background-repeat: no-repeat;
