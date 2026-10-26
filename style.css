@@ -1,6 +1,6 @@
 :root {
   color-scheme: light;
-  --page: #e7e8ec;
+  --page: #07111f;
   --surface: #eff0f3;
   --surface-hi: #f8f8fa;
   --ink: #3c3b41;
@@ -23,6 +23,45 @@ body {
   background: var(--page);
   font: 15px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
+  isolation: isolate;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: #07111f;
+  background-image:
+    radial-gradient(ellipse at 12% 8%, rgba(28, 89, 171, .32) 0%, transparent 35%),
+    radial-gradient(ellipse at 91% 42%, rgba(0, 135, 151, .17) 0%, transparent 31%),
+    radial-gradient(ellipse at 48% 100%, rgba(29, 57, 131, .25) 0%, transparent 42%),
+    linear-gradient(rgba(114, 153, 206, .065) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(114, 153, 206, .065) 1px, transparent 1px),
+    radial-gradient(circle, rgba(149, 185, 225, .19) .8px, transparent 1px),
+    linear-gradient(135deg, transparent 0 49.4%, rgba(94, 145, 210, .035) 49.7% 50.3%, transparent 50.6%);
+  background-size:
+    auto,
+    auto,
+    auto,
+    38px 38px,
+    38px 38px,
+    19px 19px,
+    118px 118px;
+  background-position:
+    center,
+    center,
+    center,
+    center,
+    center,
+    3px 6px,
+    0 0;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat, repeat, repeat, repeat;
+  background-attachment: fixed;
+}
+.store-app {
+  position: relative;
+  z-index: 1;
 }
 a { color: inherit; }
 button, input { font: inherit; }
