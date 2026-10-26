@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="1536" viewBox="0 0 768 1536" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#dce7f7"/>
+    <stop offset=".08" stop-color="#b9cde8"/>
+    <stop offset=".17" stop-color="#728db5"/>
+    <stop offset=".27" stop-color="#263e67"/>
+    <stop offset=".37" stop-color="#09162e"/>
+    <stop offset=".455" stop-color="#020817"/>
+    <stop offset=".51" stop-color="#040a16"/>
+    <stop offset=".56" stop-color="#29384f"/>
+    <stop offset=".62" stop-color="#101a2e"/>
+    <stop offset=".72" stop-color="#0a1428"/>
+    <stop offset=".83" stop-color="#24334d"/>
+    <stop offset=".94" stop-color="#a7b7ce"/>
+    <stop offset="1" stop-color="#d3deee"/>
+  </linearGradient>
+  <radialGradient id="upperGlow" cx=".5" cy=".05" r=".75">
+    <stop offset="0" stop-color="#edf4ff" stop-opacity=".88"/>
+    <stop offset=".5" stop-color="#9ab4d9" stop-opacity=".24"/>
+    <stop offset="1" stop-color="#6b91c6" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#080f20"/>
+    <stop offset=".16" stop-color="#dceeff"/>
+    <stop offset=".24" stop-color="#6e9bd3"/>
+    <stop offset=".34" stop-color="#09152b"/>
+    <stop offset=".52" stop-color="#f5fbff"/>
+    <stop offset=".61" stop-color="#7296c4"/>
+    <stop offset=".72" stop-color="#101a2a"/>
+    <stop offset=".9" stop-color="#d6e7f7"/>
+    <stop offset="1" stop-color="#24334c"/>
+  </linearGradient>
+  <linearGradient id="rim" x1="0" y1="0" x2="1" y2=".2">
+    <stop offset="0" stop-color="#e8f5ff" stop-opacity=".12"/>
+    <stop offset=".12" stop-color="#a9d6ff"/>
+    <stop offset=".26" stop-color="#315e9b"/>
+    <stop offset=".5" stop-color="#edf8ff"/>
+    <stop offset=".74" stop-color="#34649e"/>
+    <stop offset=".9" stop-color="#b4dcff"/>
+    <stop offset="1" stop-color="#e8f5ff" stop-opacity=".12"/>
+  </linearGradient>
+  <radialGradient id="sphere" cx=".5" cy=".08" r=".95">
+    <stop offset="0" stop-color="#010612"/>
+    <stop offset=".48" stop-color="#071226"/>
+    <stop offset=".78" stop-color="#182741"/>
+    <stop offset=".91" stop-color="#b8c8dc"/>
+    <stop offset=".96" stop-color="#5a7fae"/>
+    <stop offset="1" stop-color="#0a1425"/>
+  </radialGradient>
+  <linearGradient id="beam" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#d9f0ff" stop-opacity="0"/>
+    <stop offset=".42" stop-color="#79baff" stop-opacity=".75"/>
+    <stop offset=".58" stop-color="#d8f1ff" stop-opacity=".95"/>
+    <stop offset="1" stop-color="#d9f0ff" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="12"/>
+  </filter>
+</defs>
+<rect width="768" height="1536" fill="url(#sky)"/>
+<rect width="768" height="560" fill="url(#upperGlow)"/>
+<!-- distant metallic light sweeps -->
+<path d="M-35 468 C45 555 93 618 170 691 C112 635 82 590 43 527 Z" fill="url(#beam)" opacity=".72"/>
+<path d="M803 468 C723 555 675 618 598 691 C656 635 686 590 725 527 Z" fill="url(#beam)" opacity=".72"/>
+<path d="M-20 503 C52 579 97 637 152 701" fill="none" stroke="#87c8ff" stroke-opacity=".65" stroke-width="9" filter="url(#softGlow)"/>
+<path d="M788 503 C716 579 671 637 616 701" fill="none" stroke="#87c8ff" stroke-opacity=".65" stroke-width="9" filter="url(#softGlow)"/>
+<!-- central glossy ring -->
+<ellipse cx="384" cy="722" rx="372" ry="123" fill="#030815" opacity=".9"/>
+<ellipse cx="384" cy="715" rx="357" ry="109" fill="none" stroke="#050b18" stroke-width="25"/>
+<ellipse cx="384" cy="711" rx="351" ry="102" fill="none" stroke="url(#metal)" stroke-width="23"/>
+<ellipse cx="384" cy="707" rx="332" ry="88" fill="none" stroke="url(#rim)" stroke-width="9"/>
+<ellipse cx="384" cy="704" rx="307" ry="73" fill="#020817" stroke="#b7d9ff" stroke-opacity=".8" stroke-width="3"/>
+<ellipse cx="384" cy="704" rx="296" ry="63" fill="#010612"/>
+<path d="M45 713 C130 650 245 622 384 622 C523 622 638 650 723 713" fill="none" stroke="#f2f8ff" stroke-opacity=".76" stroke-width="3"/>
+<path d="M58 736 C158 800 260 825 384 825 C508 825 610 800 710 736" fill="none" stroke="#91b9ec" stroke-opacity=".95" stroke-width="8" filter="url(#softGlow)"/>
+<path d="M65 737 C166 790 260 812 384 812 C508 812 602 790 703 737" fill="none" stroke="#ddecff" stroke-width="3.5"/>
+<path d="M91 752 C191 798 278 804 384 804 C490 804 577 798 677 752" fill="none" stroke="#4d7fb8" stroke-width="8" opacity=".7"/>
+<!-- large dark reflective dome in foreground -->
+<path d="M-120 1209 C-45 1010 92 893 225 883 C285 878 330 902 384 902 C438 902 483 878 543 883 C676 893 813 1010 888 1209 L888 1536 L-120 1536 Z" fill="url(#sphere)"/>
+<path d="M-50 1183 C55 1010 175 929 280 939 C326 943 346 957 384 957 C422 957 442 943 488 939 C593 929 713 1010 818 1183" fill="none" stroke="#8fbce9" stroke-opacity=".88" stroke-width="15" filter="url(#softGlow)"/>
+<path d="M-48 1181 C60 1007 178 937 280 945 C326 949 349 963 384 963 C419 963 442 949 488 945 C590 937 708 1007 816 1181" fill="none" stroke="url(#rim)" stroke-width="8"/>
+<path d="M-18 1197 C83 1054 188 986 286 990 C326 992 350 1005 384 1005 C418 1005 442 992 482 990 C580 986 685 1054 786 1197" fill="none" stroke="#d9edff" stroke-opacity=".8" stroke-width="2.5"/>
+<ellipse cx="384" cy="1529" rx="585" ry="206" fill="url(#sphere)"/>
+<rect y="1200" width="768" height="336" fill="url(#upperGlow)" opacity=".65"/>
+</svg>
