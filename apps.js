@@ -77,7 +77,7 @@ const PRODUCTS = [
       },
       {
         heading: "Chat Neta dan layanan AI",
-        paragraphs: ["Saat Neta Chat digunakan, pesan dikirim ke layanan Google Gemini melalui Firebase AI. Jika opsi penggunaan data keuangan dinyalakan, ringkasan keuangan juga dikirim agar jawaban lebih sesuai. Hindari menulis data sensitif seperti nomor kartu atau kata sandi di chat. Ketentuan penggunaan data pada layanan AI mengikuti kebijakan penyedia layanan terkait. Fitur ini opsional dan hanya aktif dalam Mode Neta."]
+        paragraphs: ["Saat Neta Chat digunakan, pesan dikirim ke layanan Google Gemini melalui Firebase AI. Jika opsi penggunaan data keuangan dinyalakan, ringkasan keuangan juga dikirim agar jawaban lebih sesuai. Hindari menulis data sensitif seperti nomor kartu atau kata sandi di chat. Pada layanan gratis, Google dapat menggunakan konten untuk peningkatan produk mereka. Fitur ini opsional dan hanya aktif dalam Mode Neta."]
       },
       {
         heading: "Notifikasi",
@@ -89,7 +89,7 @@ const PRODUCTS = [
       },
       {
         heading: "Kontrol dan penghapusan data",
-        paragraphs: ["Pengguna dapat mengubah atau menghapus transaksi serta data lain melalui fitur aplikasi. Untuk permintaan penghapusan akun beserta data terkait, hubungi developer melalui email yang tersedia pada situs."]
+        paragraphs: ["Lewat Profil → Kelola Data, pengguna dapat mereset pengaturan dan menghapus data. Untuk menghapus akun beserta seluruh data terkait, hubungi developer melalui kontak yang tersedia pada situs."]
       },
       {
         heading: "Anak-anak dan perubahan kebijakan",

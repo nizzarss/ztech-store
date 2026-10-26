@@ -250,6 +250,16 @@ function route() {
 
 window.addEventListener("hashchange", route);
 
+document.addEventListener("click", function(event) {
+  const routeLink = event.target.closest('a[href="#/catalog"], a[href="#/about"]');
+  if (routeLink && window.location.hash === routeLink.getAttribute("href")) {
+    event.preventDefault();
+    const target = document.getElementById(routeLink.getAttribute("href") === "#/about" ? "about" : "catalog");
+    if (target) target.scrollIntoView({behavior:"smooth", block:"start"});
+    closeMobileMenu();
+  }
+});
+
 searchInput.addEventListener("input", function() {
   if (window.location.hash.startsWith("#/item/")) window.location.hash = "#/catalog";
   renderHome(searchInput.value, activeFilter);
