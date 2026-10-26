@@ -180,8 +180,7 @@ function renderHome() {
       '<div class="title-row"><div class="store-title-block">' +
         '<p class="brand-overline">KATALOG DIGITAL</p><h1>ZTECH STORE</h1>' +
         '<div class="date-stamp"><span>' + today.date + '</span><span>' + today.weekday + '</span></div>' +
-      '</div><div class="work-count"><strong>' + formatCount(PRODUCTS.length) +
-        '</strong><span>KARYA</span></div></div>' +
+      '</div></div>' +
       '<nav class="filter-rail" aria-label="Filter katalog">' + filterMarkup() + '</nav>' +
     '</section>' +
     (feature ? '<section class="featured-layout" aria-label="Karya pilihan">' +
