@@ -234,6 +234,7 @@ function route() {
       return;
     }
   }
+  if (hash === "#guide" && document.getElementById("guide")) return;
 
   renderHome(searchInput.value, window.currentProductFilter || "all");
   document.title = "ZTech Store";
@@ -288,5 +289,4 @@ sheet.addEventListener("click", function(event) {
   if (event.target === sheet) sheet.close();
 });
 
-$("#mail")?.addEventListener("click", function() {});
 route();
