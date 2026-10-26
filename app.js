@@ -78,7 +78,7 @@ function renderHome(query, filter) {
   }).join("");
 
   const showFeatured = !q && kind === "all" && matches.length > 1;
-  const featuredProduct = showFeatured ? (matches.find(function(product) { return product.featured; }) || matches[0]) : null;
+  const featuredProduct = showFeatured ? (matches.find(function(product) { return product.featured; }) || null) : null;
   const gridProducts = featuredProduct ? matches.filter(function(product) { return product.id !== featuredProduct.id; }) : matches;
 
   let gridMarkup = "";
